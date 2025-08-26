@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zak Pro</title>
+    <meta name="description" content="Zak Pro - Professional design services in logo, brand identity, digital art, sports graphics, and travel visuals">
+    <link rel="icon" type="image/png" href="Adobe Express - file.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    <div class="geometric-shape shape-1"></div>
+    <div class="geometric-shape shape-2"></div>
+    <div class="geometric-shape shape-3"></div>
+    <div class="geometric-shape shape-4"></div>
+    <div class="geometric-shape shape-5"></div>
+
+    <header class="header">
+        <div class="language-selector">
+            <button class="language-btn" id="language-btn">
+                <i class="fas fa-globe"></i>
+                <span class="current-language" data-lang="en">English</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="language-dropdown" id="language-dropdown">
+                <button class="language-option" data-lang="en">English</button>
+                <button class="language-option" data-lang="ar">العربية</button>
+                <button class="language-option" data-lang="zh">中文</button>
+            </div>
+        </div>
+        <nav class="swiss-nav">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo">
+                    <img src="logo.png" alt="Zak Pro Logo" class="nav-logo-img">
+                </a>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">HOME</a>
+                    <a href="#about" class="nav-link">ABOUT</a>
+                    <a href="#services" class="nav-link">SERVICES</a>
+                    <a href="#tech-ai" class="nav-link">TECH & AI</a>
+                    <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                    <div class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                        <div class="toggle-diamond"></div>
+                        <div class="toggle-track"></div>
+                    </div>
+                </div>
+                <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero container">
+            <div class="name-section">
+                <h1 class="zak-pro">
+                    <span class="letter">Z</span>
+                    <span class="letter">A</span>
+                    <span class="letter">K</span>
+                    <span class="letter">P</span>
+                    <span class="letter">R</span>
+                    <span class="letter">O</span>
+                </h1>
+                <p class="tagline">Designer • Developer • AI Explorer • Traveler – Blending Creativity, Technology, and Culture</p>
+                <div class="accent-element">ZP</div>
+            </div>
+            <div class="logo-section">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Zak Pro Logo" class="logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="section-container">
+                <h2 class="section-title">
+                    <span>ABOUT</span>
+                    <div class="title-accent"></div>
+                </h2>
+                <div class="section-content">
+                    <div class="pillar-container">
+                        <div class="pillar">
+                            <h3>Designer</h3>
+                            <p>Branding, logos, digital art, creative direction</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>Traveler & Volunteer</h3>
+                            <p>Cross-cultural experiences, teamwork, event management</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>Athlete</h3>
+                            <p>Discipline, resilience, health, teamwork (calisthenics, volleyball)</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>Tech Explorer</h3>
+                            <p>Web development, programming, AI research, creative AI workflows</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <p>My journey has evolved through distinct phases: beginning with design, expanding through volunteering experiences, strengthened by athletic discipline, and now exploring the frontiers of technology and artificial intelligence. Each phase has built upon the last, creating a unique blend of creative and technical skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+            <div class="section-container">
+                <h2 class="section-title">
+                    <span>SERVICES</span>
+                    <div class="title-accent"></div>
+                </h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <h3>Design & Branding</h3>
+                            <p>Logos, identity, digital art - creating distinctive visual experiences that communicate your unique story and values.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <h3>Travel & Hospitality</h3>
+                            <p>Cultural guidance, tourism support - bridging cultures through authentic experiences and meaningful connections.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <h3>Web Development & Prototyping</h3>
+                            <p>Responsive websites, automation scripts - building functional digital solutions that solve real problems.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <h3>AI & Creative Tech</h3>
+                            <p>Generative AI integration, creative workflows, LLM/prompt engineering - exploring the intersection of creativity and artificial intelligence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech-ai" class="tech-ai section">
+            <div class="section-container">
+                <h2 class="section-title">
+                    <span>Exploring the Future with AI & Code</span>
+                    <div class="title-accent"></div>
+                </h2>
+                <div class="section-content">
+                    <div class="tech-intro">
+                        <p>My passion for self-learning has led me to explore the rapidly evolving fields of artificial intelligence and web development. I'm fascinated by the potential of generative AI to transform creative workflows and am actively researching how to merge traditional design principles with cutting-edge AI technologies.</p>
+                    </div>
+                    <div class="tech-projects">
+                        <h3>Future Projects & Explorations</h3>
+                        <div class="project-placeholder">
+                            <div class="placeholder-accent"></div>
+                            <h4>AI-Powered Design Assistant</h4>
+                            <p>Coming soon - A tool that combines generative AI with design principles to create unique brand identities.</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <div class="placeholder-accent"></div>
+                            <h4>Cultural Exchange Platform</h4>
+                            <p>Coming soon - A web application connecting travelers with local experiences through AI recommendations.</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <div class="placeholder-accent"></div>
+                            <h4>Creative Workflow Automation</h4>
+                            <p>Coming soon - Custom scripts and tools to streamline the creative process for designers and artists.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio section">
+            <div class="section-container">
+                <h2 class="section-title">
+                    <span>PORTFOLIO</span>
+                    <div class="title-accent"></div>
+                </h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="https://picsum.photos/600/400?random=1" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Brand Identity Project</h3>
+                                <div class="overlay-accent">ZP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://picsum.photos/600/400?random=2" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Digital Art Collection</h3>
+                                <div class="overlay-accent">ZP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://picsum.photos/600/400?random=3" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Sports Event Branding</h3>
+                                <div class="overlay-accent">ZP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://picsum.photos/600/400?random=4" alt="Project 4">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Travel Guide Design</h3>
+                                <div class="overlay-accent">ZP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://picsum.photos/600/400?random=5" alt="Project 5">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Logo Design Series</h3>
+                                <div class="overlay-accent">ZP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://picsum.photos/600/400?random=6" alt="Project 6">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Promotional Campaign</h3>
+                                <div class="overlay-accent">ZP</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="section-container">
+                <h2 class="section-title">
+                    <span>CONTACT</span>
+                    <div class="title-accent"></div>
+                </h2>
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-links">
+                            <a href="mailto:zakarinoo@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope link-icon"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="https://wa.me/213553547492" target="_blank" class="contact-link">
+                                <i class="fab fa-whatsapp link-icon"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://instagram.com/zakpro7" target="_blank" class="contact-link">
+                                <i class="fab fa-instagram link-icon"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://facebook.com/zakarinoo" target="_blank" class="contact-link">
+                                <i class="fab fa-facebook link-icon"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://x.com/Zakarinoo" target="_blank" class="contact-link">
+                                <i class="fa-brands fa-x-twitter link-icon"></i>
+                                <span>X (Twitter)</span>
+                            </a>
+                            <a href="https://t.me/zakarinoo" target="_blank" class="contact-link">
+                                <i class="fab fa-telegram link-icon"></i>
+                                <span>Telegram</span>
+                            </a>
+                            <a href="https://github.com/ZiryaNoov" target="_blank" class="contact-link">
+                                <i class="fab fa-github link-icon"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zakarinoo" target="_blank" class="contact-link">
+                                <i class="fab fa-linkedin link-icon"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© <span id="current-year"></span> ZAK PRO · Built with passion</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

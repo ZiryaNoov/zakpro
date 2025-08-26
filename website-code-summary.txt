@@ -1,0 +1,1519 @@
+# ZAK PRO Website - Complete Code Summary
+
+## Project Structure
+This is a portfolio website for ZAK PRO with a modern, tech-focused design.
+
+## Files Included
+- index.html (Main HTML structure)
+- style.css (Styling and layout)
+
+---
+
+## index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAK PRO - Tech & AI Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    <header>
+        <div class="logo">
+            <span class="logo-text">ZAK<span class="highlight">PRO</span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tech">Tech & AI</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="ZAK PRO">ZAK PRO</h1>
+                <p class="subtitle">Tech & AI Solutions</p>
+                <div class="cta-buttons">
+                    <a href="#services" class="cta-button primary">Explore Services</a>
+                    <a href="#contact" class="cta-button secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2>About <span class="highlight">ZAK PRO</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>ZAK PRO is a cutting-edge technology company specializing in AI solutions, web development, and digital transformation. We help businesses leverage the power of technology to achieve their goals and stay ahead in the digital landscape.</p>
+                    <p>With a team of experts in various technological fields, we deliver innovative solutions tailored to your specific needs, ensuring maximum efficiency and growth.</p>
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">AI Development</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Web Development</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Cloud Solutions</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">UI/UX Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="section-header">
+                <h2>Our <span class="highlight">Services</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Solutions</h3>
+                    <p>Custom artificial intelligence solutions tailored to your business needs, from machine learning models to natural language processing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive web applications built with the latest technologies and best practices for optimal performance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Services</h3>
+                    <p>Scalable cloud infrastructure and services to ensure your applications are secure, reliable, and performant.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Native and cross-platform mobile applications that deliver exceptional user experiences across all devices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Transform your data into actionable insights with our advanced analytics and visualization solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Comprehensive security solutions to protect your digital assets and ensure compliance with industry standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech" class="tech">
+            <div class="section-header">
+                <h2><span class="highlight">Tech</span> & AI</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="tech-content">
+                <div class="tech-showcase">
+                    <div class="tech-visual">
+                        <div class="circuit-animation"></div>
+                    </div>
+                    <div class="tech-info">
+                        <h3>Cutting-Edge Technology</h3>
+                        <p>We leverage the latest advancements in technology and artificial intelligence to deliver solutions that drive innovation and growth. Our expertise spans across multiple domains, including machine learning, deep learning, computer vision, and natural language processing.</p>
+                        <p>Our team is constantly exploring emerging technologies to stay at the forefront of the digital revolution, ensuring our clients benefit from the most advanced solutions available.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Neural Networks</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Blockchain</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Quantum Computing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Get In <span class="highlight">Touch</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-links">
+                        <a href="mailto:zakarinoo@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope link-icon"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://wa.me/213553547492" target="_blank" class="contact-link">
+                            <i class="fab fa-whatsapp link-icon"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://instagram.com/zakpro7" target="_blank" class="contact-link">
+                            <i class="fab fa-instagram link-icon"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://facebook.com/zakarinoo" target="_blank" class="contact-link">
+                            <i class="fab fa-facebook link-icon"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://x.com/Zakarinoo" target="_blank" class="contact-link">
+                            <i class="fa-brands fa-x-twitter link-icon"></i>
+                            <span>X (Twitter)</span>
+                        </a>
+                        <a href="https://t.me/zakarinoo" target="_blank" class="contact-link">
+                            <i class="fab fa-telegram link-icon"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://github.com/ZiryaNoov" target="_blank" class="contact-link">
+                            <i class="fab fa-github link-icon"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zakarinoo" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin link-icon"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">ZAK<span class="highlight">PRO</span></span>
+                <p>Tech & AI Solutions</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#tech">Tech & AI</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">AI Solutions</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Cloud Services</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Data Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:zakarinoo@gmail.com">zakarinoo@gmail.com</a></li>
+                        <li><a href="https://wa.me/213553547492">+213 553 547 492</a></li>
+                        <li><a href="https://instagram.com/zakpro7">Instagram</a></li>
+                        <li><a href="https://github.com/ZiryaNoov">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ZAK PRO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                document.querySelector('nav ul').classList.remove('show');
+            });
+        });
+
+        // Active Navigation Link
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav ul li a').forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href').slice(1) === current) {
+                    a.classList.add('active');
+                }
+            });
+        });
+
+        // Form Submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Here you would normally send the form data to a server
+            // For this example, we'll just log it and show an alert
+            console.log({ name, email, subject, message });
+
+            // Show success message
+            const formMessage = document.createElement('div');
+            formMessage.classList.add('form-message');
+            formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+
+            // Insert after the form
+            this.after(formMessage);
+
+            // Reset form
+            this.reset();
+
+            // Remove message after 5 seconds
+            setTimeout(() => {
+                formMessage.remove();
+            }, 5000);
+        });
+
+        // Add animation to service cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+```
+
+---
+
+## style.css
+```css
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+  --text-color: #333;
+  --highlight-color: #e74c3c;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+.grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.highlight {
+  color: var(--highlight-color);
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background-color: var(--highlight-color);
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-align: center;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cta-button.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.cta-button.primary:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.cta-button.secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: var(--transition);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+header.scrolled {
+  padding: 15px 50px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo .logo-text {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: var(--secondary-color);
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--highlight-color);
+  transition: var(--transition);
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
+nav ul li a.active {
+  color: var(--highlight-color);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 1;
+  z-index: 2;
+}
+
+.hero-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.glitch {
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+  color: var(--secondary-color);
+  letter-spacing: 5px;
+  animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  animation: glitch-1 0.5s infinite;
+  color: var(--highlight-color);
+  z-index: -1;
+}
+
+.glitch::after {
+  animation: glitch-2 0.5s infinite;
+  color: var(--primary-color);
+  z-index: -2;
+}
+
+@keyframes glitch-1 {
+  0% {
+    clip: rect(44px, 450px, 56px, 0);
+    transform: translate(-2px, -2px);
+  }
+  5% {
+    clip: rect(12px, 450px, 59px, 0);
+    transform: translate(2px, 2px);
+  }
+  10% {
+    clip: rect(83px, 450px, 88px, 0);
+    transform: translate(-2px, -2px);
+  }
+  15% {
+    clip: rect(29px, 450px, 16px, 0);
+    transform: translate(2px, 2px);
+  }
+  20% {
+    clip: rect(76px, 450px, 59px, 0);
+    transform: translate(-2px, -2px);
+  }
+  25% {
+    clip: rect(42px, 450px, 41px, 0);
+    transform: translate(2px, 2px);
+  }
+  30% {
+    clip: rect(92px, 450px, 57px, 0);
+    transform: translate(-2px, -2px);
+  }
+  35% {
+    clip: rect(20px, 450px, 72px, 0);
+    transform: translate(2px, 2px);
+  }
+  40% {
+    clip: rect(63px, 450px, 27px, 0);
+    transform: translate(-2px, -2px);
+  }
+  45% {
+    clip: rect(34px, 450px, 55px, 0);
+    transform: translate(2px, 2px);
+  }
+  50% {
+    clip: rect(81px, 450px, 79px, 0);
+    transform: translate(-2px, -2px);
+  }
+  55% {
+    clip: rect(49px, 450px, 93px, 0);
+    transform: translate(2px, 2px);
+  }
+  60% {
+    clip: rect(80px, 450px, 53px, 0);
+    transform: translate(-2px, -2px);
+  }
+  65% {
+    clip: rect(31px, 450px, 32px, 0);
+    transform: translate(2px, 2px);
+  }
+  70% {
+    clip: rect(39px, 450px, 82px, 0);
+    transform: translate(-2px, -2px);
+  }
+  75% {
+    clip: rect(66px, 450px, 11px, 0);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    clip: rect(90px, 450px, 73px, 0);
+    transform: translate(-2px, -2px);
+  }
+  85% {
+    clip: rect(8px, 450px, 76px, 0);
+    transform: translate(2px, 2px);
+  }
+  90% {
+    clip: rect(51px, 450px, 22px, 0);
+    transform: translate(-2px, -2px);
+  }
+  95% {
+    clip: rect(25px, 450px, 64px, 0);
+    transform: translate(2px, 2px);
+  }
+  100% {
+    clip: rect(38px, 450px, 41px, 0);
+    transform: translate(-2px, -2px);
+  }
+}
+
+@keyframes glitch-2 {
+  0% {
+    clip: rect(65px, 450px, 119px, 0);
+    transform: translate(2px, 2px);
+  }
+  5% {
+    clip: rect(29px, 450px, 15px, 0);
+    transform: translate(-2px, -2px);
+  }
+  10% {
+    clip: rect(87px, 450px, 73px, 0);
+    transform: translate(2px, 2px);
+  }
+  15% {
+    clip: rect(34px, 450px, 14px, 0);
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    clip: rect(73px, 450px, 28px, 0);
+    transform: translate(2px, 2px);
+  }
+  25% {
+    clip: rect(44px, 450px, 85px, 0);
+    transform: translate(-2px, -2px);
+  }
+  30% {
+    clip: rect(23px, 450px, 34px, 0);
+    transform: translate(2px, 2px);
+  }
+  35% {
+    clip: rect(81px, 450px, 88px, 0);
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    clip: rect(45px, 450px, 23px, 0);
+    transform: translate(2px, 2px);
+  }
+  45% {
+    clip: rect(13px, 450px, 51px, 0);
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    clip: rect(62px, 450px, 42px, 0);
+    transform: translate(2px, 2px);
+  }
+  55% {
+    clip: rect(92px, 450px, 63px, 0);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    clip: rect(19px, 450px, 11px, 0);
+    transform: translate(2px, 2px);
+  }
+  65% {
+    clip: rect(53px, 450px, 100px, 0);
+    transform: translate(-2px, -2px);
+  }
+  70% {
+    clip: rect(37px, 450px, 34px, 0);
+    transform: translate(2px, 2px);
+  }
+  75% {
+    clip: rect(77px, 450px, 34px, 0);
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    clip: rect(60px, 450px, 96px, 0);
+    transform: translate(2px, 2px);
+  }
+  85% {
+    clip: rect(8px, 450px, 98px, 0);
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    clip: rect(63px, 450px, 29px, 0);
+    transform: translate(2px, 2px);
+  }
+  95% {
+    clip: rect(87px, 450px, 82px, 0);
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    clip: rect(8px, 450px, 97px, 0);
+    transform: translate(2px, 2px);
+  }
+}
+
+@keyframes glitch-skew {
+  0% {
+    transform: skew(0deg);
+  }
+  10% {
+    transform: skew(2deg);
+  }
+  20% {
+    transform: skew(0deg);
+  }
+  30% {
+    transform: skew(-2deg);
+  }
+  40% {
+    transform: skew(0deg);
+  }
+  50% {
+    transform: skew(2deg);
+  }
+  60% {
+    transform: skew(0deg);
+  }
+  70% {
+    transform: skew(-2deg);
+  }
+  80% {
+    transform: skew(0deg);
+  }
+  90% {
+    transform: skew(2deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+  font-weight: 300;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.floating-shapes {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(52, 152, 219, 0.1), rgba(231, 76, 60, 0.1));
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.shape:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  top: 60%;
+  left: 70%;
+  animation-delay: 1s;
+}
+
+.shape:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  top: 70%;
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.shape:nth-child(4) {
+  width: 120px;
+  height: 120px;
+  top: 30%;
+  left: 60%;
+  animation-delay: 3s;
+}
+
+.shape:nth-child(5) {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 40%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+}
+
+/* About Section */
+.about {
+  background-color: white;
+}
+
+.about-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+}
+
+.image-container {
+  width: 100%;
+  height: 400px;
+  background-color: var(--light-color);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-color), var(--highlight-color));
+  opacity: 0.8;
+}
+
+.skills {
+  margin-top: 40px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-bar {
+  height: 10px;
+  background-color: var(--light-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--highlight-color));
+  border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+  background-color: #f8f9fa;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--highlight-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.service-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Tech & AI Section */
+.tech {
+  background-color: white;
+}
+
+.tech-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tech-showcase {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.tech-visual {
+  flex: 1;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circuit-animation {
+  width: 300px;
+  height: 300px;
+  background-color: var(--light-color);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.circuit-animation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent 30%, rgba(52, 152, 219, 0.1) 50%, transparent 70%);
+  animation: circuit 3s linear infinite;
+}
+
+@keyframes circuit {
+  0% {
+    transform: translateX(-100%) translateY(-100%);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%);
+  }
+}
+
+.tech-info {
+  flex: 1;
+}
+
+.tech-info h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.tech-info p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.tech-tag {
+  background-color: var(--light-color);
+  color: var(--secondary-color);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f8f9fa;
+}
+
+.contact-content {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.contact-link:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.link-icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  width: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 70px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer-logo .logo-text {
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+}
+
+.footer-logo p {
+  margin-top: 10px;
+  color: #bbb;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-column h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--highlight-color);
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #bbb;
+  transition: var(--transition);
+}
+
+.footer-column ul li a:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #bbb;
+}
+
+/* Form Message */
+.form-message {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .hero-content {
+    flex: 2;
+  }
+
+  .hero-visual {
+    flex: 1;
+  }
+
+  .glitch {
+    font-size: 4rem;
+  }
+
+  .about-content,
+  .tech-showcase,
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .tech-visual {
+    height: 300px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+
+  nav.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .hero {
+    padding: 0 30px;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .glitch {
+    font-size: 3.5rem;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .floating-shapes {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .glitch {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+  .floating-shapes {
+    width: 250px;
+    height: 250px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .contact-content {
+    gap: 30px;
+  }
+}
+```
+
+---
+
+## Website Description
+
+This is a modern, responsive portfolio website for ZAK PRO, a technology company specializing in AI solutions and web development. The website features:
+
+1. **Modern Design Elements**:
+   - Glitch text animation for the main logo
+   - Floating shapes animation in the hero section
+   - Grid overlay background for a tech aesthetic
+   - Smooth scrolling and interactive navigation
+
+2. **Main Sections**:
+   - Hero section with animated logo and call-to-action buttons
+   - About section with skills visualization
+   - Services section showcasing 6 main services
+   - Tech & AI section highlighting technology expertise
+   - Contact section with form and social media links
+
+3. **Interactive Features**:
+   - Responsive navigation with active state tracking
+   - Mobile-friendly hamburger menu
+   - Animated service cards on scroll
+   - Functional contact form with validation
+
+4. **Contact Integration**:
+   - Direct links to social media profiles
+   - WhatsApp integration with phone number
+   - Email contact
+   - Professional social media presence (GitHub, LinkedIn, etc.)
+
+The website uses a modern color scheme with blue and red accents, clean typography with the Montserrat font, and responsive design that works across all device sizes.
