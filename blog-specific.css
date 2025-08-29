@@ -1,5 +1,23 @@
 /* Blog-specific styles */
 
+/* Font Families */
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-arabic: 'Cairo', sans-serif;
+}
+
+/* Arabic text styling for blog-specific */
+:lang(ar) {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  text-align: right;
+}
+
+/* Apply Arabic font to elements with Arabic content in blog-specific */
+*[dir="rtl"] {
+  font-family: var(--font-arabic);
+}
+
 /* Language dropdown fix for blog page */
 .language-dropdown.show {
   opacity: 1;

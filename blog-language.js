@@ -155,10 +155,16 @@ function updatePageContent(lang) {
     // Update document direction for RTL languages
     if (lang === 'ar') {
         document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('lang', 'ar');
         document.body.classList.add('rtl');
+        // Apply Arabic font to all elements
+        document.body.style.fontFamily = "'Cairo', sans-serif";
     } else {
         document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', 'en');
         document.body.classList.remove('rtl');
+        // Reset to default font
+        document.body.style.fontFamily = "'Montserrat', sans-serif";
     }
 }
 

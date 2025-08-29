@@ -324,8 +324,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update document direction for RTL languages
         if (lang === 'ar') {
             document.documentElement.setAttribute('dir', 'rtl');
+            document.documentElement.setAttribute('lang', 'ar');
+            // Apply Arabic font to all elements
+            document.body.style.fontFamily = "'Cairo', sans-serif";
         } else {
             document.documentElement.setAttribute('dir', 'ltr');
+            document.documentElement.setAttribute('lang', 'en');
+            // Reset to default font
+            document.body.style.fontFamily = "'Montserrat', sans-serif";
         }
     }
 });
