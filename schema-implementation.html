@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zak Pro - Schema Markup</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            direction: rtl;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #38003c;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .schema-info {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-right: 4px solid #00ff85;
+        }
+        .schema-info h2 {
+            color: #38003c;
+            margin-top: 0;
+        }
+        .schema-info p {
+            margin-bottom: 15px;
+        }
+        .schema-info ul {
+            padding-right: 20px;
+        }
+        .schema-info li {
+            margin-bottom: 10px;
+        }
+        .code-block {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: monospace;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .implementation {
+            background-color: #e8f4f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-right: 4px solid #38003c;
+        }
+        .implementation h2 {
+            color: #38003c;
+            margin-top: 0;
+        }
+        .implementation ol {
+            padding-right: 20px;
+        }
+        .implementation li {
+            margin-bottom: 15px;
+        }
+        .note {
+            background-color: #fffbea;
+            padding: 15px;
+            border-radius: 5px;
+            border-right: 4px solid #f1c40f;
+            margin-bottom: 20px;
+        }
+        .note p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Schema Markup لشركة Zak Pro</h1>
+
+        <div class="schema-info">
+            <h2>ما هو Schema Markup؟</h2>
+            <p>Schema Markup هو شكل من أشكال البيانات المنظمة (structured data) تساعد محركات البحث مثل Google على فهم محتوى موقعك بشكل أفضل. يتم استخدام تنسيق JSON-LD (JavaScript Object Notation for Linked Data) لتنفيذ هذه البيانات.</p>
+
+            <h2>فوائد Schema Markup:</h2>
+            <ul>
+                <li>تحسين ظهور الموقع في نتائج البحث</li>
+                <li>زيادة نسبة النقر إلى الظهور (CTR)</li>
+                <li>ظهور الموقع بشكل مميز في نتائج البحث (Rich Snippets)</li>
+                <li>مساعدة محركات البحث على فهم محتوى الموقع بشكل أفضل</li>
+                <li>تحسين تجربة المستخدم من خلال عرض معلومات إضافية</li>
+            </ul>
+        </div>
+
+        <div class="implementation">
+            <h2>كيفية تضمين Schema Markup في موقعك:</h2>
+            <ol>
+                <li>انسخ محتوى ملف schema.json</li>
+                <li>أضف الكود التالي في قسم &lt;head&gt; من صفحتك الرئيسية:</li>
+            </ol>
+
+            <div class="code-block">
+&lt;script type="application/ld+json"&gt;
+// هنا تضع محتوى ملف schema.json
+&lt;/script&gt;
+            </div>
+
+            <ol start="3">
+                <li>يمكنك أيضًا تضمين البيانات المنظمة في صفحات الخدمات المحددة عن طريق تعديل نوع البيانات من "Organization" إلى "Service" وتحديث الحقول ذات الصلة.</li>
+                <li>بعد إضافة Schema Markup، يمكنك التحقق من صحته باستخدام <a href="https://search.google.com/test/rich-results" target="_blank">أداة اختبار النتائج المنسقة من Google</a>.</li>
+            </ol>
+        </div>
+
+        <div class="note">
+            <p><strong>ملاحظة:</strong> تأكد من تحديث البيانات في ملف schema.json ليعكس معلومات شركتك الدقيقة بما في ذلك عنوانك، معلومات الاتصال، والروابط الخاصة بك على وسائل التواصل الاجتماعي.</p>
+        </div>
+
+        <div class="schema-info">
+            <h2>أنواع Schema Markup المستخدمة:</h2>
+            <ul>
+                <li><strong>Organization:</strong> معلومات عامة عن الشركة</li>
+                <li><strong>PostalAddress:</strong> عنوان الشركة</li>
+                <li><strong>ContactPoint:</strong> معلومات الاتصال</li>
+                <li><strong>Person:</strong> معلومات عن المؤسس والموظفين</li>
+                <li><strong>Service:</strong> معلومات عن الخدمات المقدمة</li>
+                <li><strong>OfferCatalog:</strong> كتالوج الخدمات والعروض</li>
+                <li><strong>AggregateRating:</strong> تقييمات الشركة</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

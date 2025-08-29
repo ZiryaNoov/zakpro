@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zak Pro",
+  "url": "https://zakpro.example.com",
+  "logo": "https://zakpro.example.com/images/logo.png",
+  "description": "شركة رائدة في تقديم الحلول التقنية والخدمات الاحترافية",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "شارع الملك فهد",
+    "addressLocality": "الرياض",
+    "addressRegion": "منطقة الرياض",
+    "postalCode": "11564",
+    "addressCountry": "المملكة العربية السعودية"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+966-50-123-4567",
+    "contactType": "customer service",
+    "email": "info@zakpro.example.com",
+    "availableLanguage": ["Arabic", "English"]
+  },
+  "sameAs": [
+    "https://twitter.com/zakpro",
+    "https://linkedin.com/company/zakpro",
+    "https://instagram.com/zakpro"
+  ],
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "founder": {
+    "@type": "Person",
+    "name": "زكريا أحمد"
+  },
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "أحمد محمد",
+      "jobTitle": "مطور واجهات أمامية"
+    },
+    {
+      "@type": "Person",
+      "name": "فاطمة علي",
+      "jobTitle": "مصممة جرافيك"
+    }
+  ],
+  "department": [
+    {
+      "@type": "Organization",
+      "name": "قسم تطوير الويب"
+    },
+    {
+      "@type": "Organization",
+      "name": "قسم التصميم الجرافيكي"
+    },
+    {
+      "@type": "Organization",
+      "name": "قسم التسويق الرقمي"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "خدمات zakpro",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "تطوير المواقع",
+          "description": "تطوير مواقع ويب احترافية وسريعة الاستجابة",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zak Pro"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "التسويق الرقمي",
+          "description": "حملات تسويقية رقمية شاملة لزيادة الوجود على الإنترنت",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zak Pro"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "التصميم الجرافيكي",
+          "description": "تصاميم جرافيك احترافية للهويات البصرية والمواد التسويقية",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zak Pro"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "تحسين محركات البحث (SEO)",
+          "description": "تحسين ظهور المواقع في نتائج محركات البحث",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zak Pro"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "التطبيقات المحمولة",
+          "description": "تطوير تطبيقات محمولة متعددة المنصات",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zak Pro"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "الذكاء الاصطناعي",
+          "description": "حلول ذكاء اصطناعي مخصصة لتحسين الأعمال",
+          "provider": {
+            "@type": "Organization",
+            "name": "Zak Pro"
+          }
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "42"
+  }
+}

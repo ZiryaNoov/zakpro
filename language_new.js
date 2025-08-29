@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
             services: "SERVICES",
             tech_ai: "TECH & AI",
             portfolio: "PORTFOLIO",
-            blog: "BLOG",
             contact: "CONTACT",
 
             // Hero section
@@ -76,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
             services: "خدماتنا",
             tech_ai: "التقنية والذكاء الاصطناعي",
             portfolio: "أعمالنا",
-            blog: "المدونة",
             contact: "اتصل بنا",
 
             // Hero section
@@ -143,7 +141,6 @@ document.addEventListener('DOMContentLoaded', function() {
             services: "服务",
             tech_ai: "技术与人工智能",
             portfolio: "作品集",
-            blog: "博客",
             contact: "联系",
 
             // Hero section
@@ -240,8 +237,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to update the language
     function updateLanguage(lang) {
         // Update current language display
-        currentLanguageSpan.textContent = languageOptions[lang] === 'en' ? 'English' : 
-                                       lang === 'ar' ? 'العربية' : '中文';
+        currentLanguageSpan.textContent = lang === 'en' ? 'EN' :
+                                       lang === 'ar' ? 'AR' : 'ZH';
         currentLanguageSpan.setAttribute('data-lang', lang);
 
         // Update active language option

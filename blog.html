@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zak Pro | Tech Blog</title>
+    <meta name="description" content="Zak Pro Tech Blog - Explore the latest insights, trends, and innovations in technology and artificial intelligence.">
+    <meta name="keywords" content="technology blog, AI articles, web development tutorials, data science insights, machine learning, tech trends">
+    <meta name="author" content="Zak Pro">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Zak Pro Tech Blog",
+      "description": "Explore the latest insights, trends, and innovations in technology and artificial intelligence",
+      "url": "https://zakpro.example.com/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zak Pro",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://zakpro.example.com/logo.png"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    <div class="geometric-shape shape-1"></div>
+    <div class="geometric-shape shape-2"></div>
+    <div class="geometric-shape shape-3"></div>
+    <div class="geometric-shape shape-4"></div>
+    <div class="geometric-shape shape-5"></div>
+
+    <header class="header">
+        <div class="language-selector">
+            <button class="language-btn" id="language-btn" title="Change Language">
+                <i class="fas fa-globe"></i>
+            </button>
+            <div class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                <div class="toggle-diamond"></div>
+                <div class="toggle-track"></div>
+            </div>
+            <div class="language-dropdown" id="language-dropdown">
+                <button class="language-option" data-lang="en">EN</button>
+                <button class="language-option" data-lang="ar">AR</button>
+                <button class="language-option" data-lang="zh">ZH</button>
+            </div>
+        </div>
+        <nav class="swiss-nav">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <img src="logo.png" alt="Zak Pro Logo" class="nav-logo-img">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html#home" class="nav-link">HOME</a>
+                    <a href="index.html#about" class="nav-link">ABOUT</a>
+                    <a href="index.html#services" class="nav-link">SERVICES</a>
+                    <a href="index.html#tech-ai" class="nav-link">TECH & AI</a>
+                    <a href="index.html#blog" class="nav-link active">BLOG</a>
+                    <a href="index.html#portfolio" class="nav-link">PORTFOLIO</a>
+                    <a href="index.html#contact" class="nav-link">CONTACT</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blog-page" class="blog-page section">
+            <div class="section-container">
+                <div class="blog-header">
+                    <h1 class="page-title">Blog</h1>
+                    <p class="blog-description">Exploring the frontiers of technology, artificial intelligence, and digital innovation</p>
+                </div>
+
+                <div class="blog-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="ai">AI</button>
+                    <button class="category-btn" data-category="web-dev">Web Dev</button>
+                    <button class="category-btn" data-category="data-science">Data Science</button>
+                    <button class="category-btn" data-category="design">Design</button>
+                </div>
+
+                <div class="blog-posts-grid">
+                    <article class="blog-post-item" data-category="ai">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/800/500?random=20" alt="AI and Machine Learning">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">May 15, 2023</span>
+                                <span class="post-category">AI</span>
+                            </div>
+                            <h2 class="post-title">The Future of Artificial Intelligence</h2>
+                            <p class="post-excerpt">Exploring how AI is transforming industries and what to expect in the coming years.</p>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-item" data-category="web-dev">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/800/500?random=21" alt="Web Development">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">April 28, 2023</span>
+                                <span class="post-category">Web Dev</span>
+                            </div>
+                            <h2 class="post-title">Modern Web Development Trends</h2>
+                            <p class="post-excerpt">A comprehensive guide to the latest trends and technologies in web development.</p>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-item" data-category="data-science">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/800/500?random=22" alt="Data Science">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">April 10, 2023</span>
+                                <span class="post-category">Data Science</span>
+                            </div>
+                            <h2 class="post-title">Data Science for Beginners</h2>
+                            <p class="post-excerpt">An introduction to data science concepts and tools for newcomers to the field.</p>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-item" data-category="ai">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/800/500?random=23" alt="Neural Networks">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">March 25, 2023</span>
+                                <span class="post-category">AI</span>
+                            </div>
+                            <h2 class="post-title">UI/UX Design Principles</h2>
+                            <p class="post-excerpt">Essential design principles every designer should know to create better user experiences.</p>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-item" data-category="web-dev">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/800/500?random=24" alt="JavaScript Frameworks">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">March 12, 2023</span>
+                                <span class="post-category">AI</span>
+                            </div>
+                            <h2 class="post-title">Machine Learning Applications</h2>
+                            <p class="post-excerpt">Real-world applications of machine learning across various industries.</p>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-item" data-category="design">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/800/500?random=25" alt="Quantum Computing">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">February 28, 2023</span>
+                                <span class="post-category">Web Dev</span>
+                            </div>
+                            <h2 class="post-title">Responsive Web Design</h2>
+                            <p class="post-excerpt">Best practices for creating websites that look great on all devices.</p>
+                            <a href="#" class="read-more-btn">Read More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="blog-pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn next">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <div class="blog-newsletter">
+                    <div class="newsletter-content">
+                        <div class="newsletter-logo">
+                            <img src="logo.png" alt="Zak Pro Logo" class="newsletter-logo-img">
+                        </div>
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Stay updated with the latest tech insights and articles delivered straight to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="subscribe-btn">Subscribe</button>
+                        </form>
+                        <div class="newsletter-social">
+                            <a href="https://github.com/ZiryaNoov" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zakarinoo" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://x.com/Zakarinoo" target="_blank" class="social-link">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© <span id="current-year"></span> ZAK PRO · Built with passion</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="language.js"></script>
+    <script src="blog-complete.js"></script>
+</body>
+</html>

@@ -5,12 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zak Pro</title>
     <meta name="description" content="Zak Pro - Professional design services in logo, brand identity, digital art, sports graphics, and travel visuals">
-    <link rel="icon" type="image/png" href="Adobe Express - file.png">
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Schema Markup for Zak Pro -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Zak Pro",
+      "url": "https://zakpro.example.com",
+      "logo": "https://zakpro.example.com/logo.png",
+      "description": "Zak Pro - Professional design services in logo, brand identity, digital art, sports graphics, and travel visuals",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "King Fahd Street",
+        "addressLocality": "Riyadh",
+        "addressRegion": "Riyadh Region",
+        "postalCode": "11564",
+        "addressCountry": "Saudi Arabia"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+966-50-123-4567",
+        "contactType": "customer service",
+        "email": "info@zakpro.example.com",
+        "availableLanguage": ["Arabic", "English"]
+      },
+      "sameAs": [
+        "https://twitter.com/zakpro",
+        "https://linkedin.com/company/zakpro",
+        "https://instagram.com/zakpro"
+      ],
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "founder": {
+        "@type": "Person",
+        "name": "Zakaria Ahmed"
+      },
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Ahmed Mohammed",
+          "jobTitle": "Frontend Developer"
+        },
+        {
+          "@type": "Person",
+          "name": "Fatima Ali",
+          "jobTitle": "Graphic Designer"
+        }
+      ],
+      "department": [
+        {
+          "@type": "Organization",
+          "name": "Web Development Department"
+        },
+        {
+          "@type": "Organization",
+          "name": "Graphic Design Department"
+        },
+        {
+          "@type": "Organization",
+          "name": "Digital Marketing Department"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Zak Pro Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web Development",
+              "description": "Professional and responsive website development",
+              "provider": {
+                "@type": "Organization",
+                "name": "Zak Pro"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digital Marketing",
+              "description": "Comprehensive digital marketing campaigns to increase online presence",
+              "provider": {
+                "@type": "Organization",
+                "name": "Zak Pro"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Graphic Design",
+              "description": "Professional graphic designs for visual identities and marketing materials",
+              "provider": {
+                "@type": "Organization",
+                "name": "Zak Pro"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Search Engine Optimization (SEO)",
+              "description": "Improving website visibility in search engine results",
+              "provider": {
+                "@type": "Organization",
+                "name": "Zak Pro"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mobile Applications",
+              "description": "Cross-platform mobile application development",
+              "provider": {
+                "@type": "Organization",
+                "name": "Zak Pro"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Artificial Intelligence",
+              "description": "Custom AI solutions to improve business operations",
+              "provider": {
+                "@type": "Organization",
+                "name": "Zak Pro"
+              }
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "42"
+      }
+    }
+    </script>
 </head>
 <body>
     <div class="grid-overlay"></div>
@@ -22,15 +168,17 @@
 
     <header class="header">
         <div class="language-selector">
-            <button class="language-btn" id="language-btn">
+            <button class="language-btn" id="language-btn" title="Change Language">
                 <i class="fas fa-globe"></i>
-                <span class="current-language" data-lang="en">English</span>
-                <i class="fas fa-chevron-down"></i>
             </button>
+            <div class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                <div class="toggle-diamond"></div>
+                <div class="toggle-track"></div>
+            </div>
             <div class="language-dropdown" id="language-dropdown">
-                <button class="language-option" data-lang="en">English</button>
-                <button class="language-option" data-lang="ar">العربية</button>
-                <button class="language-option" data-lang="zh">中文</button>
+                <button class="language-option" data-lang="en">EN</button>
+                <button class="language-option" data-lang="ar">AR</button>
+                <button class="language-option" data-lang="zh">ZH</button>
             </div>
         </div>
         <nav class="swiss-nav">
@@ -43,12 +191,10 @@
                     <a href="#about" class="nav-link">ABOUT</a>
                     <a href="#services" class="nav-link">SERVICES</a>
                     <a href="#tech-ai" class="nav-link">TECH & AI</a>
+                    <a href="#blog" class="nav-link">BLOG</a>
                     <a href="#portfolio" class="nav-link">PORTFOLIO</a>
                     <a href="#contact" class="nav-link">CONTACT</a>
-                    <div class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode">
-                        <div class="toggle-diamond"></div>
-                        <div class="toggle-track"></div>
-                    </div>
+
                 </div>
                 <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span>
@@ -72,6 +218,7 @@
                 </h1>
                 <p class="tagline">Designer • Developer • AI Explorer • Traveler – Blending Creativity, Technology, and Culture</p>
                 <div class="accent-element">ZP</div>
+                <div class="geometric-shape shape-morph"></div>
             </div>
             <div class="logo-section">
                 <div class="logo-container">
@@ -248,6 +395,90 @@
             </div>
         </section>
 
+        <section id="blog" class="blog section">
+            <div class="section-container">
+                <h2 class="section-title">
+                    <span>TECH BLOG</span>
+                    <div class="title-accent"></div>
+                </h2>
+                <div class="section-content">
+                    <div class="blog-intro">
+                        <p>Explore the latest insights, trends, and innovations in technology and artificial intelligence. Our blog features in-depth articles, tutorials, and thought leadership pieces from industry experts.</p>
+                    </div>
+                    <div class="blog-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3>AI & Machine Learning</h3>
+                            <p>Deep dives into artificial intelligence, neural networks, and the future of intelligent systems.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Web Development</h3>
+                            <p>Latest frameworks, best practices, and innovative approaches to modern web development.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Data Science</h3>
+                            <p>Analytics, visualization, and the art of extracting meaningful insights from complex data.</p>
+                        </div>
+                    </div>
+                    <div class="blog-preview">
+                        <h3>Latest Articles</h3>
+                        <div class="preview-articles">
+                            <div class="preview-article">
+                                <div class="article-meta">
+                                    <span class="article-date">May 15, 2023</span>
+                                    <span class="article-category">AI</span>
+                                </div>
+                                <h4>The Future of Machine Learning in Business</h4>
+                                <p>Discover how ML is transforming industries and creating new opportunities...</p>
+                            </div>
+                            <div class="preview-article">
+                                <div class="article-meta">
+                                    <span class="article-date">April 28, 2023</span>
+                                    <span class="article-category">Web Dev</span>
+                                </div>
+                                <h4>Building Responsive Websites with Modern CSS</h4>
+                                <p>Learn the latest techniques in responsive web design for all devices...</p>
+                            </div>
+                            <div class="preview-article">
+                                <div class="article-meta">
+                                    <span class="article-date">April 10, 2023</span>
+                                    <span class="article-category">Data</span>
+                                </div>
+                                <h4>Data Visualization Techniques for Better Insights</h4>
+                                <p>Explore effective methods to communicate complex information clearly...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-cta">
+                        <div class="cta-logo">
+                            <img src="logo.png" alt="Zak Pro Logo" class="cta-logo-img">
+                        </div>
+                        <p>Visit our dedicated blog section for the full archive of articles, tutorials, and insights.</p>
+                        <a href="blog.html" class="cta-button">Visit Tech Blog</a>
+                        <div class="cta-social">
+                            <a href="https://github.com/ZiryaNoov" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zakarinoo" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://x.com/Zakarinoo" target="_blank" class="social-link">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="contact section">
             <div class="section-container">
                 <h2 class="section-title">
@@ -321,5 +552,6 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="language_fixed.js"></script>
 </body>
 </html>
