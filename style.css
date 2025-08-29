@@ -932,8 +932,10 @@ body.rtl .section-header h2 .highlight {
 /* Services Section */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .service-card {
@@ -1032,16 +1034,20 @@ body.rtl .section-header h2 .highlight {
 /* Portfolio Section */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1rem, 3vw, 1.5rem);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Blog Section */
 .blog-features {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  margin: clamp(1.5rem, 4vw, 2rem) 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .blog-cta {
@@ -1207,8 +1213,10 @@ body.rtl .section-header h2 .highlight {
 
 .preview-articles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1rem, 3vw, 1.5rem);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .preview-article {
@@ -1518,8 +1526,10 @@ body.rtl .section-header h2 .highlight {
 /* Contact Section */
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form-container {
@@ -1712,8 +1722,10 @@ body.rtl .section-header h2 .highlight {
 
 .tech-projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .tech-projects h3 {
