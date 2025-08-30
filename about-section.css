@@ -1,0 +1,253 @@
+
+/* About Me Section */
+.about-section {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.dark-mode .about-section {
+  background-color: rgba(40, 40, 40, 0.5);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.about-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+}
+
+.dark-mode .about-image {
+  background-color: rgba(60, 60, 60, 0.7);
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  transition: all var(--transition-speed) ease;
+}
+
+.about-image:hover .profile-image {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.about-text h3 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 0.5rem;
+  color: var(--brand);
+}
+
+.dark-mode .about-text h3 {
+  color: var(--neon);
+}
+
+.tagline {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.about-bio p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.roles-container, .skills-container, .mission-statement {
+  margin-top: 2.5rem;
+}
+
+.roles-container h4, .skills-container h4, .mission-statement h4 {
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  margin-bottom: 1.5rem;
+  color: var(--brand);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.roles-container h4::after, .skills-container h4::after, .mission-statement h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--brand);
+}
+
+.dark-mode .roles-container h4, 
+.dark-mode .skills-container h4, 
+.dark-mode .mission-statement h4 {
+  color: var(--neon);
+}
+
+.dark-mode .roles-container h4::after, 
+.dark-mode .skills-container h4::after, 
+.dark-mode .mission-statement h4::after {
+  background-color: var(--neon);
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.role-item {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all var(--transition-speed) ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .role-item {
+  background-color: rgba(60, 60, 60, 0.7);
+}
+
+.role-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.role-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.role-item h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--brand);
+}
+
+.dark-mode .role-item h5 {
+  color: var(--neon);
+}
+
+.role-item p {
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .skill-category {
+  background-color: rgba(60, 60, 60, 0.7);
+}
+
+.skill-category h5 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--brand);
+  border-bottom: 2px solid var(--brand);
+  padding-bottom: 0.5rem;
+}
+
+.dark-mode .skill-category h5 {
+  color: var(--neon);
+  border-bottom-color: var(--neon);
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-category li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.skill-category li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: var(--brand);
+  font-size: 0.8rem;
+}
+
+.dark-mode .skill-category li::before {
+  color: var(--neon);
+}
+
+.mission-statement {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-mode .mission-statement {
+  background-color: rgba(60, 60, 60, 0.7);
+}
+
+.mission-statement::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-size: 8rem;
+  color: rgba(0, 0, 0, 0.05);
+  font-family: serif;
+}
+
+.dark-mode .mission-statement::before {
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.mission-statement p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-style: italic;
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .roles-grid, .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-statement {
+    padding: 1.5rem;
+  }
+}
